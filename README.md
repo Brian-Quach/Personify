@@ -1,2 +1,7 @@
 # Personify
-Resume Website
+
+## About
+> Resume Website
+
+***
+> 
