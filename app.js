@@ -16,17 +16,19 @@ app.use(function (req, res, next) {
     next();
 });
 
-const https = require('https');
-const PORT = 3000;
+const http = require('http');
+const PORT = 8080;
 
-var privateKey = fs.readFileSync('server.key');
-var certificate = fs.readFileSync('server.crt');
-var config = {
-    key: privateKey,
-    cert: certificate
-};
+app.listen(PORT);
 
-https.createServer(config, app).listen(PORT, function (err) {
-    if (err) console.log(err);
-    else console.log("HTTPS server on https://localhost:%s", PORT);
-});
+//var privateKey = fs.readFileSync('server.key');
+//var certificate = fs.readFileSync('server.crt');
+//var config = {
+//    key: privateKey,
+//    cert: certificate
+//};
+
+//https.createServer(config, app).listen(PORT, function (err) {
+//    if (err) console.log(err);
+//    else console.log("HTTPS server on https://localhost:%s", PORT);
+//});
