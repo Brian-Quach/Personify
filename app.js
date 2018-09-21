@@ -20,15 +20,3 @@ const http = require('http');
 const PORT = 8080;
 
 app.listen(PORT);
-
-//var privateKey = fs.readFileSync('server.key');
-//var certificate = fs.readFileSync('server.crt');
-//var config = {
-//    key: privateKey,
-//    cert: certificate
-//};
-
-//https.createServer(config, app).listen(PORT, function (err) {
-//    if (err) console.log(err);
-//    else console.log("HTTPS server on https://localhost:%s", PORT);
-//});
