@@ -2,11 +2,6 @@
 
 const express = require('express');
 const app = express();
-const fs = require('fs');
-
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
 
 app.use(express.static('static'));
 
@@ -16,7 +11,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-const http = require('http');
 const PORT = 8080;
 
 app.listen(PORT);
