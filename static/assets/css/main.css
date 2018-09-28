@@ -1789,6 +1789,10 @@ input, select, textarea {
 
 		}
 
+	.row .col-12-medium p {
+		margin: 0px;
+	}
+
 /* Box */
 
 	.box {
@@ -2611,17 +2615,15 @@ input, select, textarea {
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
+			margin-bottom: 0px;
 		}
 
 			ul.alt li {
 				border-top: solid 1px rgba(255, 255, 255, 0.15);
+				border-bottom: solid 1px rgba(255, 255, 255, 0.15);
 				padding: 0.5em 0;
 			}
 
-				ul.alt li:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
 
 	dl {
 		margin: 0 0 2em 0;
