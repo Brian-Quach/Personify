@@ -181,21 +181,36 @@
 				}
 			});
     // Skill-Bars.
-    $('.skill-bar')
+    $('.skill-bars')
         .scrollex({
             mode: 'middle',
             top: '-20vh',
             bottom: '-20vh',
             initialize: function() {
 
+            	//let skillsList = document.getElementsByClassName('skill-bar');
+
+            	//for (let i = 0; i< skillsList.length; i++){
+				//	skillsList[i].classList.add('skill-inactive');
+				//}
+
                 // Deactivate section.
-                $(this).addClass('skill-inactive');
+                //$(this).addClass('skill-inactive');
 
             },
             enter: function() {
 
+
+                console.log('k');
+
+                let skillsList = document.getElementsByClassName('skill-bar');
+
+                for (let i = 0; i< skillsList.length; i++){
+                    skillsList[i].classList.add('skill-active');
+                }
+
                 // Activate section.
-                $(this).removeClass('skill-inactive');
+                //$(this).removeClass('skill-inactive');
 
             }
         });
