@@ -3889,25 +3889,38 @@ input, select, textarea {
 .bar-50{
 	width: 50%;
 }
+.bar-50:after{
+	transition: transform 500ms ease-in-out;
+}
 .bar-60 {
 	width: 60%;
-
+}
+.bar-60:after{
+	transition: transform 600ms ease-in-out;
 }
 .bar-70 {
 	width: 70%;
-
+}
+.bar-70:after{
+	transition: transform 700ms ease-in-out;
 }
 .bar-80 {
 	width: 80%;
-
+}
+.bar-80:after{
+	transition: transform 800ms ease-in-out;
 }
 .bar-90 {
 	width: 90%;
-
+}
+.bar-90:after{
+	transition: transform 900ms ease-in-out;
 }
 .bar-100 {
 	width: 100%;
-
+}
+.bar-100:after{
+	transition: transform 1000ms ease-in-out;
 }
 
 .skill-bar{
@@ -3919,7 +3932,6 @@ input, select, textarea {
 	content: '';
 	border-bottom: .4em solid #5052b5;
 	transform: scaleX(0);
-	transition: transform 1000ms ease-in-out;
 }
 .skill-active:after{
 	transform: scaleX(1);
